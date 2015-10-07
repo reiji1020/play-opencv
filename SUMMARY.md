@@ -3,6 +3,6 @@
 * [Introduction](README.md)
 * [Intro](intro.md)
 * [First](first.md)
-* vs
+* [vs](vs.md)
 * [Material](material.md)
 
