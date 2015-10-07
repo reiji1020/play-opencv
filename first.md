@@ -39,3 +39,7 @@ http://opencv.org/downloads.html
 
 `opencv-2.4.9.exe`というファイルがダウンロードできたら，exeファイルをダブルクリックし実行します．
 
+インストールは以下のURLの記述に沿って行います．
+
+http://physics-station.blogspot.jp/2013/03/opencv-visual-studio.html
+
