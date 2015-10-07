@@ -43,3 +43,18 @@ http://opencv.org/downloads.html
 
 http://physics-station.blogspot.jp/2013/03/opencv-visual-studio.html
 
+exeファイルを実行すると，OpenCVをどこにインストールするか訪ねてきますので，「C:\」を指定してください(\は半角の￥マークでも構いません)
+
+![](スクリーンショット_100715_030848_PM.jpg)
+
+インストールに成功すると，Cドライブ直下に`opencv`というフォルダが生成されます．
+
+![](スクリーンショット_100715_032050_PM.jpg)
+
+[ここ](https://onedrive.live.com/redir?resid=7ACA20D611380471!3643&authkey=!AJwzntpIxwuQYKw&ithint=folder%2chpp)から`opencv_lib.hpp`をダウンロードし，`C:\opencv\build\include\opencv2`の中に配置します．
+
+![](スクリーンショット_100715_032811_PM.jpg)
+
+次に，OpenCVがきちんとコンピュータで使えるように，opencvが保存されている場所をコンピュータに教えてあげる必要があります．この作業の事を「パスを通す」といいます．
+
+
