@@ -20,4 +20,9 @@ http://imagingsolution.blog107.fc2.com/
 
 http://www.asahi-net.or.jp/~yf8k-kbys/newcpp0.html
 
+# 参考書籍
 
+* [詳解 OpenCV――コンピュータビジョンライブラリを使った画像処理・認識](http://www.oreilly.co.jp/books/9784873114132/)
+* [C/C++辞典―Windows/Linux/UNIX対応](http://www.amazon.co.jp/C-%E8%BE%9E%E5%85%B8%E2%80%95Windows-Linux-UNIX%E5%AF%BE%E5%BF%9C/dp/4798025968)
+
+ネットの方が情報が新しくで動くコードが書いてあるので，お金をかけなくても勉強できますよ!
