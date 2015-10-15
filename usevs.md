@@ -5,19 +5,21 @@
 Visual Studio 2013の画面構成は以下のようになります．
 
 
-```
+以下に画像を表示するだけの単純なプログラムを掲載しています．
+
+```c++
 #include "cv.h"
 #include "highgui.h"
 // 画像表示
-int main(int argc, char* argv[])
+int main(void)
 {
 	// 画像ファイルポインタの宣言
-	IplImage* img;
+	cvMat* mat;
 	// 読み込み画像ファイル名
-	char imgfile[] = "lena.jpg";
+	char imgName = "lena.jpg";
 
 	// 画像の読み込み
-	img = cvLoadImage(imgfile, CV_LOAD_IMAGE_ANYCOLOR | CV_LOAD_IMAGE_ANYDEPTH);
+	mat = cvLoadImage(imgName, CV_LOAD_IMAGE_ANYCOLOR | CV_LOAD_IMAGE_ANYDEPTH);
 
 	// 画像の表示用ウィンドウ生成
 	cvNamedWindow("lena", CV_WINDOW_AUTOSIZE);
@@ -35,4 +37,9 @@ int main(int argc, char* argv[])
 	cvReleaseImage(&img);
 
 	return 0;
-}```
+}
+```
+
+コードの説明をします．
+
+まず，OpenCVが提供する関数(プログラム)は，CV~~といった名前がつけられています(cvNamedWindow,cvShowImageなど)．
