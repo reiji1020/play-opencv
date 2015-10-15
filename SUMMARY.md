@@ -4,7 +4,7 @@
 * [First](first.md)
    * [install](install.md)
 * [vs](vs.md)
-   * useVS
+   * [useVS](usevs.md)
 * [makeVS](makevs.md)
 * [Material](material.md)
 * [dreamspark](dreamspark.md)
