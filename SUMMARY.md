@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [First](first.md)
-   * install
+   * [install](install.md)
 * [vs](vs.md)
 * [makeVS](makevs.md)
 * [Material](material.md)
