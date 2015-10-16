@@ -1,4 +1,4 @@
-![](KsQGacGGAbWSF5S3-17C89.png)
+![](/img/KsQGacGGAbWSF5S3-17C89.png)
 
 画像処理ライブラリ「OpenCV」を使って面白いプログラムを作ってみよう!
 
