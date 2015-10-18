@@ -38,3 +38,5 @@ int main()
 
 OpenCVでは，画像を2次元の行列として扱います．
 
+![](/img/RGB.png)
+
