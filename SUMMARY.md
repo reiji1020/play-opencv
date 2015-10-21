@@ -9,6 +9,6 @@
 * [プログラムの案を練ろう](project.md)
    * [長崎色さるくの概要](nagasaki-color-saruku.md)
 * [付録](material.md)
-* [dreamspark](dreamspark.md)
+* [dreamsparkに登録しよう](dreamspark.md)
    * [signin](signin.md)
 
