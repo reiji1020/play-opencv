@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [OpenCVとは?](first.md)
-   * [install](install.md)
+   * [OpenCVのインストール](install.md)
 * [vs](vs.md)
    * [useVS](usevs.md)
    * [sample-code](sample-code.md)
