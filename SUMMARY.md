@@ -6,7 +6,7 @@
 * [Visual Studioでプログラムを作ってみよう](vs.md)
    * [Visual StudioとOpenCVを使ってみよう](usevs.md)
    * [サンプルコードを見てみよう](sample-code.md)
-* [project](project.md)
+* [プログラムの案を練ろう](project.md)
    * [Nagasaki-color-saruku](nagasaki-color-saruku.md)
 * [Material](material.md)
 * [dreamspark](dreamspark.md)
