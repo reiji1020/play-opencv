@@ -45,7 +45,7 @@ http://blogs.msdn.com/b/microsoft_japan_academic/archive/2015/07/18/10628662.asp
 
 数分ほどで認証結果が返ってきます．認証ができた旨のメールが返ってくれば、学生認証ができたということになります．
 
-**この認証プログラムはChrome,Firefox,Operaなどのブラウザでは上手く動作しないことがあります．必ずInternetExplorerを使用して，メールアドレスによる認証を受けてください．**
+**※この認証プログラムはChrome,Firefox,Operaなどのブラウザでは上手く動作しないことがあります．必ずInternetExplorerを使用して，メールアドレスによる認証を受けてください．**
 
 認証が通ると，学生用dreamsparkのサイトにおいて必要なソフトウェアをダウンロードすることができるようになります．
 
