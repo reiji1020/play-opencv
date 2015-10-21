@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [OpenCVとは?](first.md)
    * [OpenCVのインストール](install.md)
-* [vs](vs.md)
+* [Visual Studioでプログラムを作ってみよう](vs.md)
    * [useVS](usevs.md)
    * [sample-code](sample-code.md)
 * [project](project.md)
