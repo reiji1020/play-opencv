@@ -7,7 +7,7 @@
    * [Visual StudioとOpenCVを使ってみよう](usevs.md)
    * [サンプルコードを見てみよう](sample-code.md)
 * [プログラムの案を練ろう](project.md)
-   * [Nagasaki-color-saruku](nagasaki-color-saruku.md)
+   * [長崎色さるくの概要](nagasaki-color-saruku.md)
 * [Material](material.md)
 * [dreamspark](dreamspark.md)
    * [signin](signin.md)
