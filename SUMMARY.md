@@ -6,7 +6,7 @@
 * [vs](vs.md)
    * [useVS](usevs.md)
    * [sample-code](sample-code.md)
-* project
+* [project](project.md)
 * [Material](material.md)
 * [dreamspark](dreamspark.md)
    * [signin](signin.md)
