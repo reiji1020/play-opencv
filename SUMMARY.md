@@ -14,5 +14,5 @@
 * [dreamsparkに登録しよう](dreamspark.md)
    * [サインインの仕方](signin.md)
 * [プログラミングをしよう](programming.md)
-   * [Video](video.md)
+   * [Webカメラで撮影をするプログラムを書いてみよう](video.md)
 
