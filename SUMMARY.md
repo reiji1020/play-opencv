@@ -10,9 +10,9 @@
    * [長崎色さるくの概要](nagasaki-color-saruku.md)
    * [長崎色さるくのつくりについて](programming-saruku.md)
    * [プログラムを組み立てよう](block.md)
+* [プログラミングをしよう](programming.md)
+   * [Webカメラで撮影をするプログラムを書いてみよう](video.md)
 * [付録](material.md)
 * [dreamsparkに登録しよう](dreamspark.md)
    * [サインインの仕方](signin.md)
-* [プログラミングをしよう](programming.md)
-   * [Webカメラで撮影をするプログラムを書いてみよう](video.md)
 
