@@ -17,6 +17,9 @@
 #include <opencv2/opencv_lib.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
+using namespace cv;
+using namespace std;
+
 int main(void) {
     // ここにコードを追加していきます
 }
