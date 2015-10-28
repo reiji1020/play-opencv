@@ -39,4 +39,24 @@ VideoCapture capture(0)と書けば，コンピュータがデフォルトで指
 
 `isOpened()`は，VideoCaptureクラスで定義されている関数であり，USBカメラが認識できているかどうかを判断します．
 
-先ほどカメラにアクセスするためにcaptureを定義しましたので，**captureでアクセスしたカメラに対してisOpened()関数を使いますよ**，という意味でcapture.isOpened()という風に書きます．
+先ほどカメラにアクセスするためにcaptureを定義しましたので，`captureでアクセスしたカメラに対してisOpened()関数を使いますよ`，という意味でcapture.isOpened()という風に書きます．
+
+## カメラの映像を表示してみる
+
+さて，ここまででカメラのアクセスに関するプログラムは書くことができました．しかし，これだけでは本当にカメラの映像が取得できているのかわかりませんね．
+
+実際にカメラの映像を画面上に表示するプログラムを書いてみましょう．先ほどのコードの下に，このようなプログラムを追加してみてください．
+
+```c++
+    cv::Mat frame, src_video;
+    char windowName[] = "カメラでさるくマップを撮影してね!";
+	cv::namedWindow(windowName, CV_WINDOW_AUTOSIZE);
+	
+	while(cv::cvWaitKey(1) == -1){
+	    capture >> frame;
+	    src_video = capture;
+	    cv::imshow(windowName,src_video);
+	}
+	cv::destroyAllWindow();
+	return 0;
+```
