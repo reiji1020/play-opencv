@@ -23,7 +23,7 @@ http://opencv.jp/opencv-2svn/cpp/reading_and_writing_images_and_video.html
 main関数の中に，以下のコードを追加して下さい．
 
 ```C++
-cv::VideoCapture capture(0);
+VideoCapture capture(0);
 // カメラが使えない場合はプログラムを止める
 if(!capture.isOpened())
     return -1
@@ -48,15 +48,69 @@ VideoCapture capture(0)と書けば，コンピュータがデフォルトで指
 実際にカメラの映像を画面上に表示するプログラムを書いてみましょう．先ほどのコードの下に，このようなプログラムを追加してみてください．
 
 ```c++
-    cv::Mat frame, src_video;
+    Mat frame, src_video;
     char windowName[] = "カメラでさるくマップを撮影してね!";
-	cv::namedWindow(windowName, CV_WINDOW_AUTOSIZE);
+	namedWindow(windowName, CV_WINDOW_AUTOSIZE);
 	
-	while(cv::cvWaitKey(1) == -1){
+	while(cvWaitKey(1) == -1){
 	    capture >> frame;
 	    src_video = capture;
-	    cv::imshow(windowName,src_video);
+	    imshow(windowName,src_video);
 	}
-	cv::destroyAllWindow();
+	destroyAllWindow();
 	return 0;
+```
+
+サンプルプログラムで出てきたMatを使用しています．ここでは，カメラの映像を画像として描画するためのframeという変数と，frameが取得した映像をコピーして保存しておくための`src_video`という変数を定義しています．
+
+これからカメラの映像をもとにプログラムを改造していくのですが，カメラが取得した画像をそのまま加工する事は余りよろしくないため，src_videoを定義して，コピーした映像に対して処理を加えていくことになります．
+
+`namedWindow()関数`は，ウィンドウを生成するための関数です．引数はそれぞれ(ウィンドウの名前,ウィンドウのサイズ)です．
+
+ここではウィンドウの名前をWindowNameという変数で定義をしています．WindowNameの中身を変更すれば好きな名前にすることができます．
+
+ウィンドウのサイズは数値で細かく指定することもできます．今回のプログラムでは，ウィンドウの大きさを細かく指定する必要がないため，自動で適当なサイズに変形してくれる`CV_WINDOW_AUTOSIZE`を指定しています．
+
+While文の中身は，
+
+1. captureで取得したカメラの映像をframeに入力する
+2. src_videoにframeの画像をコピーする
+3. src_videoの画像を，windowNameという名前のウィンドウで表示をする
+4. 1~3の処理を，キーボードのキーが押されるまで繰り返す
+
+という処理を行っています．
+
+C++では，ファイル入出力のための演算子として">>"が定義されています．
+
+captureで取得したデータを，画像データとして出力するために>>演算子を使用しています．
+
+ここまでプログラムを書くことができたら，F5キーを押してプログラムを実行してみましょう．
+
+
+
+
+
+
+###クラスとは
+
+クラスを扱う前に，C言語の構造体について説明したほうが理解しやすいでしょう．
+
+C言語では，`構造体`という考え方が存在します．
+
+構造体とは，プログラム中でよく使用するデータ型を定義しておいて，データの入出力を簡単にすることができるデータ構造です．
+
+配列でも似たようなことができますが，配列ではすべてのデータに対し同一のデータ型(int型,double型…)しか使用することができません．
+
+構造体では，構造体で定義したいデータに対して複数のデータ型を与えてあげることができます．
+
+例を見てみましょう．
+
+```C++
+    // 配列
+    // int型の配列なので，この配列には整数しか入れることができない
+    int score[5] = {80,73,56,92,64}
+    
+    // 構造体
+    typedef{
+    }
 ```
