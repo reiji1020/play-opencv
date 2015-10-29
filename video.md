@@ -50,17 +50,17 @@ VideoCapture capture(0)と書けば，コンピュータがデフォルトで指
 実際にカメラの映像を画面上に表示するプログラムを書いてみましょう．先ほどのコードの下に，このようなプログラムを追加してみてください．
 
 ```c++
-    Mat frame, src_video;
-    char windowName[] = "カメラでさるくマップを撮影してね!";
-	namedWindow(windowName, CV_WINDOW_AUTOSIZE);
+Mat frame, src_video;
+char windowName[] = "カメラでさるくマップを撮影してね!";
+namedWindow(windowName, CV_WINDOW_AUTOSIZE);
 	
-	while(cvWaitKey(1) == -1){
-	    capture >> frame;
-	    src_video = capture;
-	    imshow(windowName,src_video);
-	}
-	destroyAllWindow();
-	return 0;
+while(cvWaitKey(1) == -1){
+    capture >> frame;
+    src_video = capture;
+    imshow(windowName,src_video);
+}
+destroyAllWindow();
+return 0;
 ```
 
 サンプルプログラムで出てきたMatを使用しています．ここでは，カメラの映像を画像として描画するためのframeという変数と，frameが取得した映像をコピーして保存しておくための`src_video`という変数を定義しています．
@@ -108,32 +108,32 @@ C言語では，`構造体`という考え方が存在します．
 例を見てみましょう．
 
 ```C++
-    // 配列
-    // int型の配列なので，この配列には整数しか入れることができない
-    int score[5] = {80,73,56,92,64}
+// 配列
+// int型の配列なので，この配列には整数しか入れることができない
+int score[5] = {80,73,56,92,64}
     
-    // 構造体
-    // さまざまなデータ型のデータを定義することができる
-    typedef MEMBER{
-        int num;
-        char name[100];
-        double height;
-        double weight;
-    }
+// 構造体
+// さまざまなデータ型のデータを定義することができる
+typedef MEMBER{
+    int num;
+    char name[100];
+    double height;
+    double weight;
+}
     
-    // 構造体の初期化
-    struct MEMBER nagasaki_yuru{
-        {1, "がんばくん", 180.0, 70.5},
-        {2, "らんばちゃん", 155.6, 55.1},
-        {3, "おむらんちゃん", 165.7, 60.6},
-        {4, "人面石くん", 177.5, 80.2},
-        {5, "角煮まんじゅうちゃん", 162.3, 62.5},
-    };
+// 構造体の初期化
+struct MEMBER nagasaki_yuru{
+    {1, "がんばくん", 180.0, 70.5},
+    {2, "らんばちゃん", 155.6, 55.1},
+    {3, "おむらんちゃん", 165.7, 60.6},
+    {4, "人面石くん", 177.5, 80.2},
+    {5, "角煮まんじゅうちゃん", 162.3, 62.5},
+};
     
-    // 構造体の中身を出力するときは以下のように書く
-    for (int i = 0; i < 5; i++){
-        printf("学籍番号:%d,氏名:%15s,身長:%3.1f,体重:%3.1f", nagasaki_yuru[i].num, nagasaki_yuru[i].name, nagasaki_yuru[i].height, nagasaki_yuru[i].weight);
-    }
+// 構造体の中身を出力するときは以下のように書く
+for (int i = 0; i < 5; i++){
+    printf("学籍番号:%d,氏名:%15s,身長:%3.1f,体重:%3.1f", nagasaki_yuru[i].num, nagasaki_yuru[i].name, nagasaki_yuru[i].height, nagasaki_yuru[i].weight);
+};
 ```
 
 構造体のデータ(`メンバ`といいます)を呼び出すとき，`nagasaki_yuru[i].num`や`nagasaki_yuru[i].name`のように書いています．
