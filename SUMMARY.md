@@ -12,7 +12,7 @@
    * [プログラムを組み立てよう](block.md)
 * [プログラミングをしよう](programming.md)
    * [Webカメラで撮影をするプログラムを書いてみよう](video.md)
-   * [色空間とは](hsv.md)
+   * [どうやって色を表現すればよいだろう?](hsv.md)
    * [色情報を取り出すプログラムを書こう](pickupcolor.md)
 * [付録](material.md)
 * [dreamsparkに登録しよう](dreamspark.md)
