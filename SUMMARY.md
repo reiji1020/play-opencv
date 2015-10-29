@@ -13,7 +13,7 @@
 * [プログラミングをしよう](programming.md)
    * [Webカメラで撮影をするプログラムを書いてみよう](video.md)
    * [色情報を取り出すプログラムを書こう](pickupcolor.md)
-   * [HSV](hsv.md)
+   * [表色系とは](hsv.md)
 * [付録](material.md)
 * [dreamsparkに登録しよう](dreamspark.md)
    * [サインインの仕方](signin.md)
