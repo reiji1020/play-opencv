@@ -11,6 +11,9 @@ uchar hue, sat, val; // Hue, Saturation, Valueを表現する変数
 Mat smooth_video; // ノイズを除去した映像を保存する
 Mat hsv_video; // HSVに変換した映像を保存する
 dst_img = Mat(Size(src_video.cols, src_video.rows), CV_8UC1); // 認識結果を表示する
+
+char hsvwindow[] = "HSV変換結果";
+namedWindow(hsvwindow, CV_WINDOW_AUTOSIZE);
 ```
 
 必要な変数が定義できました．それでは，while文の中身を編集していきましょう．
@@ -47,3 +50,5 @@ imshow(hsv_window, hsv_video);
 `cvtColor()`関数は色空間を変更する関数で，引数は(変換したい元の画像，変換した後の画像，変換する色空間)です．CV_BGR2HSVを指定することで，RGB色空間からHSV色空間に変換することができます．
 
 前ページでは色空間の変換が難しそうに見えたかもしれませんが，OpenCVを使用すれば簡単に実装することができました．
+
+最後に`imshow()`関数で変換した後の映像を見てみましょう．びっくりするような映像が出力されるはずです!
