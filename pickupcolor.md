@@ -22,12 +22,12 @@ while (cvWaitKey(1) == -1)
 		// カメラから1フレーム取得する
 		capture >> frame;
 		src_video = frame;
-		dst_img = Mat(Size(src_video.cols, src_video.rows), CV_8UC1);　// この行を追加
 		imshow(windowName,src_video);
 	}
 ```
 
-まず，
+まず，認識結果を出力するためのMat画像を初期化します．`Scalar()`関数は，Matの中のデータを任意の数値で初期化をする働きをします．ここではR,G,Bすべての値を0で初期化をしていますので，dst_imgは真っ黒の画像ということになります．
+
 
 
 色認識に関わらず，画像処理・映像処理においてノイズ除去処理を行うことは大切です．
