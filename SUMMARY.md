@@ -12,7 +12,7 @@
    * [プログラムを組み立てよう](block.md)
 * [プログラミングをしよう](programming.md)
    * [Webカメラで撮影をするプログラムを書いてみよう](video.md)
-   * [pickup_color](pickupcolor.md)
+   * [色情報を取り出すプログラムを書こう](pickupcolor.md)
 * [付録](material.md)
 * [dreamsparkに登録しよう](dreamspark.md)
    * [サインインの仕方](signin.md)
