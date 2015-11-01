@@ -17,5 +17,4 @@
 * [付録](material.md)
 * [dreamsparkに登録しよう](dreamspark.md)
    * [サインインの仕方](signin.md)
-* ブラウザを開いてみよう
 
