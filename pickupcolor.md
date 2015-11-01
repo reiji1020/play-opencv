@@ -16,6 +16,8 @@ char hsvwindow[] = "HSV変換結果";
 namedWindow(hsvwindow, CV_WINDOW_AUTOSIZE);
 ```
 
+## HSV色空間への変換
+
 必要な変数が定義できました．それでは，while文の中身を編集していきましょう．
 
 ```C++
@@ -52,3 +54,72 @@ imshow(hsv_window, hsv_video);
 前ページでは色空間の変換が難しそうに見えたかもしれませんが，OpenCVを使用すれば簡単に実装することができました．
 
 最後に`imshow()`関数で変換した後の映像を見てみましょう．びっくりするような映像が出力されるはずです!
+
+## 色を取り出す
+
+色を取り出す為の下準備は終わりました．
+
+それでは，実際に任意の色を取り出すプログラムを書いてみましょう．
+
+OpenCVでは，HSVのそれぞれの値の範囲を，以下のように定義しています．
+
+* Hue(色相)→0~180
+* Saturation(明度)→0~255
+* Value(彩度)→0~255
+
+従って，色見本などのデータを参考にコードを書く場合は，値をOpenCVの表現方法に合わせる必要があります．
+
+例として，黄色を認識するプログラムを書いていきましょう．
+
+黄色の色見本のURLを載せておきます．
+
+[Giallo Vaticano](http://www.color-sample.com/colors/3559/)
+
+鮮やかで明るい黄色ですね．
+
+この色のHSV(V→Brightness)値は，
+
+* Hue:55
+* Saturation:100
+* Value(Brightness):95
+
+ですね．
+
+これをOpenCVの値に直すと，
+
+* Hue:55/2=22.5
+* Saturation:255.0*1.0=255.0
+* Value:255.0*0.95=242.25
+
+という数値になります．
+
+つまり，
+
+1. Hueが約22~23の間にあり
+2. Saturationが255.0以下の
+3. Valueが240以上
+
+の色を検出するようにプログラムを書いてあげればよいということです．
+
+※あまり範囲をきつくし過ぎると上手く検出できない事があるので，ある程度余裕を持たせた閾値を設定するとよいです．
+
+それでは，While文の中にコードを追加していきましょう．
+
+
+```C++
+// H,S,Vの要素に分割する
+for(int y = 0; y < hsv_video.rows; y++) {
+	for (int x = 0; x < hsv_video.cols; x++) {
+		hue = hsv_video.at<Vec3b>(y, x)[0];
+		sat = hsv_video.at<Vec3b>(y, x)[1];
+		val = hsv_video.at<Vec3b>(y, x)[2];
+		// 居留地マップの検出
+		if ((hue < 23 && hue > 22) && sat > 100 && val > 240) {				                dst_img.at<uchar>(y, x) = 255;
+		}
+		else {
+			dst_img.at<uchar>(y, x) = 0;
+		}
+	}
+}
+```
+
