@@ -123,3 +123,7 @@ for(int y = 0; y < hsv_video.rows; y++) {
 }
 ```
 
+HSVに変換した画像は，RGBの画像と同じく3つの行列からできています．
+
+![](/img/RGB2HSV.png)
+
