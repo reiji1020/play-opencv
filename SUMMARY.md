@@ -14,6 +14,7 @@
    * [Webカメラで撮影をするプログラムを書いてみよう](video.md)
    * [どうやって色を表現すればよいだろう?](hsv.md)
    * [色情報を取り出すプログラムを書こう](pickupcolor.md)
+   * Preview
 * [付録](material.md)
 * [dreamsparkに登録しよう](dreamspark.md)
    * [サインインの仕方](signin.md)
