@@ -1,6 +1,7 @@
 {
     "plugins": [
-        "quiz@0.1.0"
+        "quiz@0.1.0",
+        "exercises@1.0.0"
     ],
     "pluginsConfig": {}
 }
