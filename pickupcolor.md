@@ -126,7 +126,8 @@ for(int y = 0; y < hsv_video.rows; y++) {
 		sat = hsv_video.at<Vec3b>(y, x)[1];
 		val = hsv_video.at<Vec3b>(y, x)[2];
 		// 居留地マップの検出
-		if ((hue < 23 && hue > 22) && sat > 100 && val > 240) {				                dst_img.at<uchar>(y, x) = 255;
+		if ((hue < 35 && hue > 20) && sat > 127) {
+		    dst_img.at<uchar>(y, x) = 255;
 		}else {
 			dst_img.at<uchar>(y, x) = 0;
 		}
@@ -153,7 +154,8 @@ val = hsv_video.at<Vec3b>(y, x)[2];
 画素データにアクセスする場合は，`Mat画像.at<Vec3b>(行,列)[num]`というふうに書きます．numの部分は，色相にアクセスする場合は0，彩度にアクセスする場合は1，明度にアクセスする場合は2です．
 
 ```C++
-if ((hue < 23 && hue > 22) && sat > 100 && val > 240) {				    dst_img.at<uchar>(y, x) = 255;
+if ((hue < 35 && hue > 20) && sat > 127) {
+    dst_img.at<uchar>(y, x) = 255;
 }else {
 	dst_img.at<uchar>(y, x) = 0;
 }
