@@ -30,3 +30,19 @@ Webページを開くには，InternetExplorerやGoogleChromeのようなウェ�
 
 まず，この2つのファイルをインクルードさせる必要があります．
 
+この時点で，プログラムの先頭部分は以下のようになっていると思います．
+
+```c++
+#include <iostream>
+#include <windows.h>
+#include <shellapi.h>
+
+#include <opencv2/opencv.hpp>
+#include <opencv2/opencv_lib.hpp>
+#include <opencv2/highgui/highgui.hpp>
+
+#pragma comment(lib, "shell32.lib") // この行も追加
+```
+
+インクルード文の下に`pragma ~ `と書いている行を追加してください．これはブラウザを開くための関数に必要なデータが格納されているライブラリファイルを読み込ませる処理です．よくわからなければ，おまじないと思ってもらっていて良いです．
+
