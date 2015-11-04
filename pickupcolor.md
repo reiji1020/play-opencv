@@ -38,7 +38,7 @@ while (cvWaitKey(1) == -1)
 ```C++
 imshow(windowName,src_video);
 // ここから追加
-medianBlur(src_video, smooth_video, 7);
+medianBlur(src_video, smooth_video, 5);
 cvtColor(smooth_video, hsv_video, CV_BGR2HSV);
 imshow(hsv_window, hsv_video);
 ```
