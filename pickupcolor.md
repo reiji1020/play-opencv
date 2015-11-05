@@ -14,6 +14,8 @@ dst_img = Mat(Size(src_video.cols, src_video.rows), CV_8UC1); // 認識結果を
 
 char hsvwindow[] = "HSV変換結果";
 namedWindow(hsvwindow, CV_WINDOW_AUTOSIZE);
+char dstwindow[] = "認識結果"
+namedWindow(dstwindow, CV_WINDOW_AUTOSIZE);
 ```
 
 ## HSV色空間への変換
