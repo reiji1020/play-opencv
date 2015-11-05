@@ -16,7 +16,7 @@
    * [色情報を取り出すプログラムを書こう](pickupcolor.md)
    * [色情報を元にブラウザを起動してみよう](preview.md)
 * [付録](material.md)
-   * ほかの色を認識するプログラムを書いてみよう
+   * [ほかの色を認識するプログラムを書いてみよう](other.md)
 * [dreamsparkに登録しよう](dreamspark.md)
    * [サインインの仕方](signin.md)
 
