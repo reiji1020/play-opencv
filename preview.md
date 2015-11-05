@@ -129,6 +129,8 @@ while (browser_flag != true)
         /* … */
 	}
 	ShellExecute(0, 0, L"http://www.saruku.info/course/Y139.html", 0, 0, SW_SHOW);
+	destroyAllWindows();
+	return 0;
 ```
 
 ループを止めたら，ブラウザを表示するコードを書きます．`ShellExecute()関数`は，Windowsであらかじめ決められたソフトウェアをプログラム側から呼び出すための関数です．
