@@ -48,3 +48,19 @@ if ((hue < 120 && hue > 90) && sat > 127) { // Hueの閾値を変えました
 
 少し変えるだけで，いろんな色を抽出することができます!
 
+http://www.color-sample.com/
+
+ここではさまざまな色のHSVの数値を確認することができます．
+
+以下の色の認識にチャレンジしてみましょう！
+
+
+* 赤 http://www.color-sample.com/colors/3997/
+
+* 緑 http://www.color-sample.com/colors/784/
+
+* ピンク http://www.color-sample.com/colors/832/
+
+ピンクはすこし難しいかもしれません…
+
+もし上の3つの色を認識できたら，もっとほかの色の認識にも取り組んでみましょう!
