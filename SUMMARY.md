@@ -9,7 +9,6 @@
 * [プログラムの案を練ろう](project.md)
    * [長崎色さるくの概要](nagasaki-color-saruku.md)
    * [長崎色さるくのつくりについて](programming-saruku.md)
-   * [プログラムを組み立てよう](block.md)
 * [プログラミングをしよう](programming.md)
    * [Webカメラで撮影をするプログラムを書いてみよう](video.md)
    * [どうやって色を表現すればよいだろう?](hsv.md)
