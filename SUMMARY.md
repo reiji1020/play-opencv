@@ -19,4 +19,5 @@
    * [ほかの色を認識するプログラムを書いてみよう](other.md)
 * [dreamsparkに登録しよう](dreamspark.md)
    * [サインインの仕方](signin.md)
+* おわりに
 
