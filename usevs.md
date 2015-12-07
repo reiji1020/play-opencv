@@ -1,4 +1,4 @@
-# Visual StudioとOpenCVを使ってみよう
+# Visual StudioとOpenCVを使う
 
 では，早速Visual Studio 2013を使ってみましょう．
 
