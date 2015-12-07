@@ -1,4 +1,4 @@
-# Visual Studioでプログラムを作ってみよう
+# プログラムを作ろう
 
 ## Visual Studioとは?
 
