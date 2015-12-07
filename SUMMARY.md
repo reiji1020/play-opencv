@@ -4,7 +4,7 @@
 * [OpenCVとは?](first.md)
    * [OpenCVのインストール](install.md)
 * [プログラムを作ってみよう](vs.md)
-   * [Visual StudioとOpenCVを使ってみよう](usevs.md)
+   * [Visual StudioとOpenCVを使う](usevs.md)
    * [サンプルコードを見てみよう](sample-code.md)
 * [プログラムの案を練ろう](project.md)
    * [長崎色さるくの概要](nagasaki-color-saruku.md)
