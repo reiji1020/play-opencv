@@ -17,6 +17,7 @@
 * [おわりに](thank.md)
 * [付録](material.md)
    * [ほかの色を認識するプログラムを書いてみよう](other.md)
+   * ファイルパスの確認の仕方
 * [dreamsparkに登録しよう](dreamspark.md)
    * [サインインの仕方](signin.md)
 
