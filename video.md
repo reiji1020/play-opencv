@@ -14,10 +14,28 @@ http://opencv.jp/opencv-2svn/cpp/reading_and_writing_images_and_video.html
 
 ## プログラムのひな形
 
+作っていくプログラムのひな形です．まずはこれを入力してください．
+
 ```c++
 #include <iostream>
-#include <>
+
+#include <opencv2/opencv.hpp>
+#include <opencv2/opencv_lib.hpp>
+#include <opencv2/highgui/highgui.hpp>
+
+using namespace cv;
+using namespace std;
+
+int main(void)
+{
+  // このなかにプログラムを書いていきます
+}
 ```
+
+前の章で「OpenCVで提供される関数にはcvが付く」という話をしました．
+
+しかし，毎回毎回cv::hogehoge~なんて書くのは面倒です．ここで`using namespace cv;`というコードをmain関数の外に書いておくと，「cv::」を省くことができます．
+stdも同じで，std::と頭につく関数の「std::」を省いて書くことができるようになります．
 
 ## Webカメラへのアクセス
 
