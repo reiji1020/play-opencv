@@ -12,6 +12,13 @@ http://opencv.jp/opencv-2svn/cpp/reading_and_writing_images_and_video.html
 
 といった感じです．早速実装していきましょう．
 
+## プログラムのひな形
+
+```c++
+#include <iostream>
+#include <>
+```
+
 ## Webカメラへのアクセス
 
 みなさんの手持ちのPCには，インカメラが付いているでしょうか?それともカメラは何も付いていないでしょうか．
