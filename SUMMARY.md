@@ -11,7 +11,7 @@
    * [サンプルコードを見てみよう](sample-code.md)
 * [プログラミングをしよう](programming.md)
    * [Webカメラで撮影しよう](video.md)
-   * [どうやって色を表現すればよいだろう?](hsv.md)
+   * [色を表現する方法](hsv.md)
    * [色情報を取り出すプログラムを書こう](pickupcolor.md)
    * [色情報を元にブラウザを起動してみよう](preview.md)
 * [おわりに](thank.md)
