@@ -4,7 +4,7 @@ Visual Studioの環境が整ったので，プログラムを書いて動かし�
 
 以下のプログラムを見てください．
 
-```c++:showimage.cpp
+```c++
 #include <opencv2/opencv.hpp>
 #include <opencv2/opencv_lib.hpp>
 #include <opencv2/highgui/highgui.hpp>
