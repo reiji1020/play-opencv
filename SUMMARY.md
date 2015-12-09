@@ -13,7 +13,7 @@
    * [Webカメラで撮影しよう](video.md)
    * [色を表現する方法](hsv.md)
    * [映像から色情報を取り出す](pickupcolor.md)
-   * [色情報を元にブラウザを起動してみよう](preview.md)
+   * [色情報を元にブラウザを起動する](preview.md)
 * [おわりに](thank.md)
 * [付録](material.md)
    * [ほかの色を認識するプログラムを書いてみよう](other.md)
