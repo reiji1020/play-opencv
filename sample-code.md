@@ -9,8 +9,6 @@ Visual Studioの環境が整ったので，プログラムを書いて動かし�
 #include <opencv2/opencv_lib.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-using namespace cv;
-
 int main()
 {
   cv::Mat src_img;
