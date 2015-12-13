@@ -9,7 +9,7 @@ Visual Studioの環境が整ったので，プログラムを書いて動かし�
 #include <opencv2/opencv_lib.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-int main()
+int main(void)
 {
   cv::Mat src_img;
   src_img = cv::imread("ファイルパス", 1);
@@ -18,7 +18,7 @@ int main()
 
   // 結果画像表示
   cv::namedWindow("src_img", CV_WINDOW_AUTOSIZE|CV_WINDOW_FREERATIO);
-  cv::imshow("Image", src_img);
+  cv::imshow("src_img", src_img);
   cv::waitKey(0);
 }
 ```
