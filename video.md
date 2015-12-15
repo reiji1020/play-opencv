@@ -81,7 +81,7 @@ namedWindow(windowName, CV_WINDOW_AUTOSIZE);
 	
 while(WaitKey(1) == -1){
     capture >> frame;
-    src_video = capture;
+    src_video = frame;
     imshow(windowName,src_video);
 }
 destroyAllWindows();
