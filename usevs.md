@@ -1,8 +1,8 @@
 # Visual StudioとOpenCVを使う
 
-では，早速Visual Studio 2013を使ってみましょう．
+では，早速Visual Studio 2015を使ってみましょう．
 
-Visual Studio 2013の画面構成は以下のようになります．
+Visual Studio 2015の画面構成は以下のようになります．
 
 ![](/img/vsmenu.png)
 
