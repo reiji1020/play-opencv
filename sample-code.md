@@ -17,8 +17,8 @@ int main(void)
   if(src_img.empty()) return -1;
 
   // 結果画像表示
-  cv::namedWindow("src_img", CV_WINDOW_AUTOSIZE|CV_WINDOW_FREERATIO);
-  cv::imshow("src_img", src_img);
+  cv::namedWindow("Image", CV_WINDOW_AUTOSIZE|CV_WINDOW_FREERATIO);
+  cv::imshow("Image", src_img);
   cv::waitKey(0);
 }
 ```
