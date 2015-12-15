@@ -10,7 +10,7 @@
    * [Visual StudioとOpenCVを使う](usevs.md)
 * [プログラミングをしよう](programming.md)
    * [サンプルコードを見てみよう](sample-code.md)
-   * [Webカメラで撮影しよう](video.md)
+   * [USBカメラで撮影しよう](video.md)
    * [色を表現する方法](hsv.md)
    * [映像から色情報を取り出す](pickupcolor.md)
    * [色情報を元にブラウザを起動する](preview.md)
