@@ -51,7 +51,7 @@ main関数の中に，以下のコードを追加して下さい．
 VideoCapture capture(0);
 // カメラが使えない場合はプログラムを止める
 if(!capture.isOpened())
-    return -1
+    return -1;
 ```
 
 OpenCVには，VideoCaptureというWebカメラを容易に扱えることのできるクラス(※)が用意されています．
