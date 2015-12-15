@@ -84,7 +84,7 @@ while(WaitKey(1) == -1){
     src_video = capture;
     imshow(windowName,src_video);
 }
-destroyAllWindow();
+destroyAllWindows();
 return 0;
 ```
 
