@@ -79,7 +79,7 @@ Mat frame, src_video;
 char windowName[] = "カメラでさるくマップを撮影してね!";
 namedWindow(windowName, CV_WINDOW_AUTOSIZE);
 	
-while(WaitKey(1) == -1){
+while(waitKey(1) == -1){
     capture >> frame;
     src_video = frame;
     imshow(windowName,src_video);
