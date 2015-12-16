@@ -10,7 +10,6 @@
    * [Visual StudioとOpenCVを使う](usevs.md)
 * [プログラミングをしよう](programming.md)
    * [サンプルコードを見てみよう](sample-code.md)
-       * [エラーが出る！](error.md)
    * [USBカメラで撮影しよう](video.md)
    * [色を表現する方法](hsv.md)
    * [映像から色情報を取り出す](pickupcolor.md)
