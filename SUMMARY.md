@@ -18,6 +18,7 @@
 * [付録](material.md)
    * [ファイルパスの確認の仕方](30d5_30a1_30a4_30eb_30d1_30b9_306e_que_ren_306e_sh.md)
    * [ほかの色を認識するプログラムを書いてみよう](other.md)
+   * プログラム例
 * [dreamsparkに登録しよう](dreamspark.md)
    * [サインインの仕方](signin.md)
 
