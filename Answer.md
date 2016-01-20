@@ -8,7 +8,7 @@
 →https://gist.github.com/reiji1020/508c88899e9d98d8e115
 
 ### 映像から色情報を取り出す
-→
+→https://gist.github.com/reiji1020/eb9cf1bced677a8d94a7
 
 ### 色情報を元にブラウザを起動する
 →
