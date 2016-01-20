@@ -8,9 +8,11 @@
 
 ```C++
 uchar hue, sat, val; // Hue, Saturation, Valueを表現する変数
-Mat smooth_video; // ノイズを除去した映像を保存する
-Mat hsv_video; // HSVに変換した映像を保存する
-dst_img = Mat(Size(src_video.cols, src_video.rows), CV_8UC1); // 認識結果を表示する
+Mat src_video(Size(640,480),CV_8UC1,Scalar::all(255)); // サイズを指定する
+Mat smooth_video(Size(640, 480), CV_8UC1, Scalar::all(255)); // ノイズを除去した映像を保存する
+Mat hsv_video(Size(640, 480), CV_8UC1, Scalar::all(255)); // HSVに変換した映像を保存する
+Mat frame(Size(640, 480), CV_8UC1, Scalar::all(255));
+Mat dst_img(Size(640, 480), CV_8UC1, Scalar::all(0)); // 認識結果を表示する
 
 char hsvwindow[] = "HSV変換結果";
 namedWindow(hsvwindow, CV_WINDOW_AUTOSIZE);
